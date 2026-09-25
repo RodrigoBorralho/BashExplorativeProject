@@ -10,6 +10,17 @@ atq - queue of the at
 
 atrm id - remove schedule
 
+crontab -e
+crontab -u -e
+
+dom - day of the month
+mon - month
+dow - day of the week 1..7
+* - on every
+
+m  h  dom mon dow   command
+31 1   *   *   5     path/script
+
 ### output redirect
 
 1>dev/null - standard output -> everything printed that's not an error
