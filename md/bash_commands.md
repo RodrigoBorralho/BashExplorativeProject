@@ -31,9 +31,9 @@ echo - output text cat - output file content
 
 -eq
 
--gt
+-gt | -ge
 
--lt
+-lt | -le
 
 diff - compare two files
 

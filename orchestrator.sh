@@ -6,10 +6,26 @@ export PATH="$PATH:/mnt/c/Users/rodri/Desktop/projects/BashExplorativeProject/Ba
 
 echo -e "\n $PATH"
 
-echo -e "Updating permissions..."
+# if there are additional arguments use the specified file
+if [ $1 ]
+then 
+    filenames="$1.sh"
+else
+    # else use the config.json specified files
+    if [ -f config/config.json ]
+    then
+        filenames=$(cat config/config.json | underscore select '.script')
+    else
+        filenames=$(ls scripts/)
+    fi
 
-bash variable_experiment.sh
-bash if_statements.sh
-bash exitcodes.sh
+fi
+
+# run files
+for file in $filenames;
+do
+    bash "$file"
+done
+
 
 echo Done
