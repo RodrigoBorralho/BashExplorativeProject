@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo -e '\nrunning variable_experiment.sh...'
 
 echo -e "\nrunnning parameter extension {}"

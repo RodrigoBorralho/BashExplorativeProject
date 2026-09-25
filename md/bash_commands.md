@@ -1,6 +1,10 @@
 
 ## Bash Commands
 
+export - create environment variables
+systemctl - Manages Services
+
+### Transversal
 cd folderPath
 cd /
 cd ~- 
@@ -10,7 +14,7 @@ ls
 ls -l 
 ls -a
 
-systemctl - Manages Services
+### File/Directory Management
 
 sudo - Run command as administrator nano -Edit files touch - Create Files
 
@@ -18,18 +22,32 @@ mkdir - Create Directory rmdir - Delete Directory rm - Delete File or Directorie
 
 chmod +x +r +w - Manage File permissions mv file /folder - Move File
 
+### Bash Operations
+
 echo - output text cat - output file content
 
-head - file first lines tail - file last lines
+#### check/compare values/files
+-f
+
+-eq
+
+-gt
+
+-lt
 
 diff - compare two files
 
-export - create environment variables
+#### Select/Search lines
 
-cd - get in a directory
+head - file first lines 
 
-find - Search files and directories grep - Search text in files egrep - Search text patterns in files
+tail - file last lines
 
+find - Search files and directories 
+grep - Search text in files 
+egrep - Search text patterns in files
+
+### Network
 ip - Manage network settings ping - ping another device curl - Transfer data via URL wget - Download files from the web
 
 
