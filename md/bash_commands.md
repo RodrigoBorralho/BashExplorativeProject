@@ -4,6 +4,11 @@
 export - create environment variables
 systemctl - Manages Services
 
+### arguments
+$1
+
+$# - number of arguments
+
 ### schedule execution
 at $date -f myscript - $date can be just the hour(18:00) or $DATE
 atq - queue of the at
