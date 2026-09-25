@@ -16,3 +16,12 @@ for ((i=0; i<=maxnumber; i++))
 do
     echo $i
 done
+
+echo -e "\ncase.."
+
+numbercase=1
+case $numbercase in
+    1) echo "number is 1";;
+    2) echo "number is 2";;
+    *) echo "number is something else";;
+esac
