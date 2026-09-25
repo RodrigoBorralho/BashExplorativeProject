@@ -4,6 +4,12 @@
 export - create environment variables
 systemctl - Manages Services
 
+### schedule execution
+at $date -f myscript - $date can be just the hour(18:00) or $DATE
+atq - queue of the at
+
+atrm id - remove schedule
+
 ### output redirect
 
 1>dev/null - standard output -> everything printed that's not an error
