@@ -4,6 +4,14 @@
 export - create environment variables
 systemctl - Manages Services
 
+### output redirect
+
+1>dev/null - standard output -> everything printed that's not an error
+
+2>dev/null - standard error -> everything printed that's an error
+
+x> output.txt
+
 ### Transversal
 cd folderPath
 cd /
@@ -26,9 +34,12 @@ chmod +x +r +w - Manage File permissions mv file /folder - Move File
 
 echo - output text cat - output file content
 
-#### check/compare values/files
+#### file/dir exist
 -f
 
+-d
+
+#### compare values/files
 -eq
 
 -gt | -ge

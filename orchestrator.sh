@@ -1,9 +1,9 @@
 #!/bin/bash
+mainpath="/mnt/c/Users/rodri/Desktop/projects/BashExplorativeProject/BashExplorativeProject"
 
 echo -e "\nAdding bash scripts folder into path..."
-export PATH="$PATH:/mnt/c/Users/rodri/Desktop/projects/BashExplorativeProject/BashExplorativeProject/scripts"
-export PATH="$PATH:/mnt/c/Users/rodri/Desktop/projects/BashExplorativeProject/BashExplorativeProject"
-
+export PATH="$PATH:$mainpath/scripts"
+export PATH="$PATH:$mainpath"
 echo -e "\n $PATH"
 
 # if there are additional arguments use the specified file
@@ -24,7 +24,7 @@ fi
 # run files
 for file in $filenames;
 do
-    bash "$file"
+    bash "$file" $mainpath
 done
 
 
